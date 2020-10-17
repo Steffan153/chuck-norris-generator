@@ -1,0 +1,22 @@
+<div class="flex justify-center mt-5">
+  <div class="flex flex-col items-center">
+    <div class="flex text-lg">
+      <a
+        class="hover:bg-gray-200 text-purple-500 border-l border-t border-b border-purple-500 px-3 py-1 rounded-l-lg"
+        routerLink="/"
+        routerLinkActive="bg-purple-500 text-white"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Random
+      </a>
+      <a
+        class="hover:bg-gray-200 text-purple-500 border border-purple-500 px-3 py-1 rounded-r-lg"
+        routerLink="/search"
+        routerLinkActive="bg-purple-500 text-white"
+      >
+        Search
+      </a>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+</div>
